@@ -2,7 +2,7 @@ var sql = require('../DataBase/db');
 
 // Handle index actions
 exports.index = function (req, res) {
-    sql.query('SELECT id, NmDepartamento FROM departamentos', (err, result) =>{
+    sql.query('SELECT id, NmDepartamento FROM Departamentos', (err, result) =>{
         if(!err)
         {    // res.json({
             //     status: 'API Esta funcionando',
