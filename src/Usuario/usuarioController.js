@@ -16,7 +16,7 @@ exports.index = function (req, res) {
 };
 
 exports.view = function (req, res) {
-    sql.query('SELECT NmUsuario, Funcao, DtAdmissao FROM Usuarios WHERE IdFirebase = ?' + req.params.id, (err, result) =>{
+    sql.query('SELECT NmUsuario, Funcao, DtAdmissao FROM Usuarios WHERE IdFirebase = ' + req.params.id, (err, result) =>{
         if(!err)
         {
             res.json(result);
